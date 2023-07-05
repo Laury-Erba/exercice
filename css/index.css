@@ -1,6 +1,37 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    margin: 0;
+}
+h1{
+    font-size: 3rem;
+}
 nav{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
     }
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a:hover{
+    color: #EE82EE;
+}
+.container{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+form > div{
+    padding-bottom: 30px;
+}
+
+footer{
+    margin-top: 35px;
+    background-color: #efefefef;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}

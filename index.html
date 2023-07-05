@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body class="p-contact">
     <header>
@@ -15,45 +17,64 @@
             <a href="#">Accueil</a>
             <a href="#">À propos</a>
             <a href="#">Contact</a>
-        <img width="250px"src="./images/logo-form.avif" alt="Image d'en-tête">
-    </nav>
-    </header>
-    <article>
-        <h2>Contactez-nous</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Consequuntur cupiditate temporibus omnis sunt. 
-            Cumque doloremque veniam excepturi laborum, laudantium repellendus </p>
             <figure>
                 <img width="250px"src="./images/logo-form.avif" alt="Image d'en-tête">
                 <figcaption>Description de l'image 1</figcaption>
             </figure>
+    </nav>
+    </header>
+    <article class="container">
+        <h2>Contactez-nous</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Consequuntur cupiditate temporibus omnis sunt. 
+            Cumque doloremque veniam excepturi laborum, laudantium repellendus </p>
+           
         <form>
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" required>
+            <div>
+              <label for="nom">Nom :</label>
+              <input type="text" id="nom" name="nom" required>
+            </div>
             
-            <label for="email">Adresse email :</label>
-            <input type="email" id="email" name="email" required>
+            <div>
+              <label for="email">Email :</label>
+              <input type="email" id="email" name="email" required>
+            </div>
             
-            <label for="phone">Numéro de téléphone :</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
-
-            <label for="country">Pays :</label>
-        <select id="country" name="country">
-            <option value="fr">France</option>
-            <option value="us">États-Unis</option>
-            <option value="ca">Canada</option>
-        </select>
+            <div>
+              <label for="date">Date de naissance :</label>
+              <input type="date" id="date" name="date">
+            </div>
             
-            <label for="comments">Commentaires :</label>
-            <textarea id="comments" name="comments"></textarea>
+            <div>
+              <label>Genre :</label>
+              <input type="radio" id="genre-femme" name="genre" value="femme" required>
+              <label for="genre-femme">Femme</label>
+              
+              <input type="radio" id="genre-homme" name="genre" value="homme" required>
+              <label for="genre-homme">Homme</label>
+            </div>
             
-            <button type="submit">Envoyer</button>
+            <div>
+              <label for="message">Message :</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            
+            <div>
+              <label for="accepter">J'accepte les conditions :</label>
+              <input type="checkbox" id="accepter" name="accepter" required>
+            </div>
+            
+            <div>
+              <button type="submit">Envoyer</button>
+            </div>
 
             <details>
                 <summary>Plus d'informations</summary>
                 <p>Ceci est un contenu supplémentaire qui peut être masqué ou révélé en cliquant sur le résumé ci-dessus.</p>
             </details>
-        </form>
+          </form>
+
+          
     </article>
     <footer>
         <address>
